@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+//// vòng lặp có tác dụng lắp đi lặp lại 1 đoạn code nào đó
+//// với số lần biết trước hoặc không biết trước
+//// for loop - vòng lặp for
+//// lặp với số lần biết trước
+//// for (let i = 0; i < 4; i = i +1){
+////     console.log("hello word");
+//// Lần lặp đầu tiên: i = 0; i < 4 (0 < 4 (true)) console.log("Hello world"), i = 0 + 1 (1)
+//// Lần lặp thứ hai:  i = 1; i < 4 (1 < 4 (true)) console.log("Hello world"); i = 1 + 1 (2)
+//// Lần lặp thứ ba:   i = 2; i < 4 (2 < 4 (true)) console.log("Hello world"); i = 2 + 1 (3)
+//// Lần lặp thứ tư:   i = 3; i < 4 (3 < 4 (true)) console.log("Hello world"); i = 3 + 1 (4)
+//// Lần lặp thứ năm:  i = 4; i < 4 (4 < 4 (false)) // Không được thực hiện nữa
+//// for (let i = 0; i < 4; i = i +2){
+////     console.log("hello world");
+////     }
+//// Exercise 1:
+//// Tính tổng của biểu thức A = 1 + 2 + 3 + ... + 10
+//// let a = 0
+//// for (let i = 1; i <= 10; i = i + 1){
+////     a = a + i;
+//// }
+//// console.log(`A = ${a}`);
+//
+//
+//// Ex2:
+//// Cho người dùng nhập vào n
+//// Tính tổng của biểu thức B = 1 + 2 + 3 + ... + n
+//// let b = Number(prompt(' nhập vào n'));
+//// let a = 0;
+//// for (let i = 0; i <=3; i = i +1){
+////     console.log(`n = ${b}`);
+//// Ex3:
+//// Cho người dùng nhập vào số n
+//// Tính tổng của biểu thức C = 1^2 + 2^2 + 3^2 + ... + n^2
+////  let n = Number(prompt(`Nhập vào n^2`));
+////  for (let i = 0; i <=10; i=i+1) {
+////      n= n+i**2;
+////  }
+////  console.log(`N = ${n^2}`);
+//
+//// Ex4:
+//// // Cho người dùng nhập vào số n
+//// // Tính tích của biểu thức D = 1 * 2 * 3 * ... * n
+//// let n = Number(prompt(`nhập n `));
+//// let a = 1;
+//// for (let i = 1; i <=n; i = i +1){
+//// //     a = a * i;
+//// //     console.log(`N = ${a}`);
+////
+//// }
+//
+//// Ex4:
+//// Cho người dùng nhập vào số n
+//// // Tính tổng của biểu thức E = 1/1 + 1/2 + 1/3 + ... + 1/n
+//// let n = Number(prompt(`nhập n`));
+//// let a = i;
+//// for (let i = 1; i <=n;i = i + 1){
+////     a = a + (1/i);
+////     console.log(`N = ${a}`);
+//// //
+////
+//// }
+//// câu 5
+//let a = 0;
+//for (let i = 1; i <=; i = i +1){
+//    a = a + 1 / i;
+//}
+//// String (chuỗi)
+//let Str = "hello world";
+//// index (chỉ số)
+//// 0 ---> length - 1
+//// 0 ---> 10
+//// length = 11
+//// length ( độ dài của chuôi)
+//console.log(str.length);
+//// truy cập vào phần tử trong chuỗi
+//// thông qua index ( chỉ số)
+//// console.log(str[0]);
+//// console.log(str[10]);
+//// // lấy ra chỉ số của ký tự cuối cùng0
+//// let latsIndex =str.length- 1;
+//// console.log(str[10]);
+//// // thao tác với toàn bộ phần tử có trong chuỗi
+//// for (let i = 0; i<= str.length - 1; i = i + 1){
+////     console.log(i , str [i]);
+//}
+// Ex6:
+// Cho người dùng nhập vào một chuỗi bất kỳ
+// In ra chuỗi ngược lại
+
+// let str = 'bố thằng điên';
+// let reverse_str = '';
+//
+// for (let i= str.length -1; i >= 0; i--){
+//     reverse_str +=str[i];
+// }
+//
+// console.log(reverse_str);
+// {
+//
+// }
+
+
+// Ex7:
+// Cho người dùng nhập vào một chuỗi bất kỳ
+// In ra chuỗi mới với mỗi ký tự của chuỗi cũ được biến thành dạng <ký tu>
+// let a = String (prompt(" nhập vào chuỗi bất kì"));
+// let b = String();
+// for (let i = 0;i <= a.length-1; i=i++){
+//     b = b + [i]
+//     console.log(b);
+// }
+//  while loop
+// lặp đi lặp lại trên số lần
+//
+
+// for (let i = 0; i <= 10; i = i + 1){
+//     console.log(i, "hello world");
+// }
+// let i = 0;
+// while (i <=10){
+//     // block code
+//     console.log(i, "hello world");
+//     // block code
+//     i = i +2;
+// // }
+// // lặp lại với số lần không biết trước
+// let state = true;
+// while (state){
+//     // block
+//     // In the futere
+//     // if (condition2){
+//     //state = false;
+//     //}
+//     // }
+//     // Example
+// let i = 0;
+// let state = true;
+// while (state){
+//     i = i +3;
+//     console.log(i);
+//     if ( i === 30){
+//         state = false;
+//
+//     }
+// }
+//     }
+// let state = true;
+// while (state){
+//     let userInput = prompt("Please input anything but E");
+//     console.log(userInput);
+//     if (userInput === "E"){
+//         // state = false;
+//         break;
+//     }
+// }
+// for (let i = 0; i <= 10; i = i +1){
+//     console.log(i,"hello world");
+//     if (i === 5){
+//         break;
+//     }
+// }
+// let cart = `vanilla, chocolate, cookies, sting, redbull`;
+// Cho sẵn một chuỗi cart tương tự như giỏ hàng của bạn
+// Điều hướng người dùng chỉ nhập vào 5 chữ cái C/R/U/D/E
+// -- C: Hỏi người dùng item muốn thêm vào cart
+// ----- Tiến hành thêm item vào cart và in ra màn hình
+// Ví dụ: input: thit cho
+
+//        output: `vanilla, chocolate, cookies, sting, redbull, thit cho`
+// -- R: In ra toàn bộ những item trong cart
+//        output: `vanilla, chocolate, cookies, sting, redbull, thit cho`
+// -- U: Hỏi người dùng muốn update item nào trong cart
+// ----- Cho người dùng nhập vào item muốn thay thế trong cart
+// ----- Tiến hành thay và in ra màn hình các item trong cart
+// -- D: Hỏi người dùng muốn xoá item nào trong cart
+// ----- Tiến hành xoá và in ra màn hình các item trong cart
+// -- E: Biến chương trình thay vòng lặp vĩnh cửu cho đến khi
+// ----- người dùng nhập vào E thì in ra màn hình thank you.
+// let cart = `vanilla, chocolate, cookies, sting,redbull`;
+// let userInput = prompt("Please input C/R/U/D/E");
+// if (userInput === "C"){
+    // B1: thêm sản phẩm mới vào cart = câu lệnh prompt()
+    //b2: nối item thêm vào string cart = phép nối chuỗi
+    // b3: in ra màn hình console String cart
+// }else  if (userInput === "R"){
+//     // b1: in ra màn hình console String cart
+// } else if (userInput === "U"){
+    //b1; sử dụng câu lệnh prompt () cho người dùng nhập vào item
+    // muốn update
+    // b2: sử dụng câu lệnh prompt () cho người dùng vào item
+    // mới thay thế cho item trên
+    // b3: tiến hành update và In ra màn hình console string cart
+    // sau khi update
+// }else if (userInput === D){
+    //b1: sủ dụng câu lệnh prompt cho người dùng nhập vào item
+    // muốn dalete
+    // b2: tiến hành xóa và in ra màn hình console string cart sau
+    // khi được xóa item đó đi
+// }else if (userInput === "E"){
+    // dừng chương trình
+// }
+let cart = `vanilla, chocolate, cookies, sting, redbull`;
+let state = true;
+
+while (state) {
+    let userInput = prompt(`Please input C/R/U/D/E`);
+    if (userInput === "C") {
+        //B1: Thêm sản phẩm mới vào cart = câu lệnh prompt()
+        let item = prompt(`Mày muốn mua thêm sản phẩm gì nào?`);
+        //B2: Nối item vừa thêm vào string cart = phép nối chuỗi
+        cart = cart + `, ${item}`;
+        //B3: In ra màn hình cousole string cart
+        console.log(cart);
+    } else if (userInput === "R") {
+        //B1: In ra màn hình cousole string cart
+        console.log(cart);
+    } else if (userInput === "U") {
+        //B1: Sử dụng câu lệnh prompt() cho người dùng nhập vào item muốn update
+        let updateItem = prompt(`Nhập item muốn update`);
+        //B2: Sử dụng câu lệnh prompt() cho người dùng nhập vào item mới thay thế cho item trên
+        let newItem = prompt(`Nhập item mới`);
+        //B3: Tiến hành update và in ra màn hình cousole string cart sau khi được update
+        cart = cart.replace("updateItem", "newItem");
+        alert(`cart`)
+    }  else if (userInput === "D") {
+        //B1: Sử dụng câu lệnh prompt() cho người dùng nhập vào item muốn delete
+        let deteleItem = prompt(`Nhập item muốn detele`);
+        //B2: Tiến hành xóa và in ra màn hình cousole string cart sau khi được xóa item đó đi
+        cart = cart.replace(`,${updateItem}`, "");
+        alert(`cart`)
+    } else if (userInput === "E") {
+        // Dừng chương trình
+        console.log("Thank you for shopping");
+        state = false;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
